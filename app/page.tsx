@@ -83,9 +83,9 @@ const phases: Phase[] = [
 
 const destinations = ["继续使用", "维修", "转赠", "正规回收", "暂不决定"];
 const petColors = [
-  { id: "gray", name: "灰色", image: "/hanhan-gray.png" },
-  { id: "yellow", name: "黄色", image: "/hanhan-yellow.png" },
-  { id: "blue", name: "蓝色", image: "/hanhan-blue.png" },
+  { id: "gray", name: "灰色", image: "./hanhan-gray.png" },
+  { id: "yellow", name: "黄色", image: "./hanhan-yellow.png" },
+  { id: "blue", name: "蓝色", image: "./hanhan-blue.png" },
 ] as const;
 type PetColor = (typeof petColors)[number]["id"];
 const taskKey = (phaseIndex: number, taskIndex: number) => `${phaseIndex}-${taskIndex}`;
@@ -147,7 +147,7 @@ export default function Home() {
 
         <section className="welcome-section" aria-labelledby="welcome-title">
           <div className="welcome-copy"><p className="eyebrow">A LITTLE CARE, A LOT OF LOVE</p><h1 id="welcome-title">好好检查，<br />继续<span className="love-word">陪伴<svg viewBox="0 0 200 15" aria-hidden="true"><path d="M3 11 Q90 0 195 8" /></svg></span>。<span className="heading-spark" aria-hidden="true">✳︎</span></h1></div>
-          <div className="pet-scene"><div className="pet-heading"><span>MEET YOUR LITTLE FRIEND</span><span className="pet-tag">正在被好好照顾 <Icon name="heart" /></span></div><span className="scene-spark spark-one" aria-hidden="true">✧</span><span className="scene-spark spark-two" aria-hidden="true">✳︎</span><div className="pet-halo" /><img className="hero-pet" src="/hanhan-ui.png" alt="毛茸茸的黄色憨憨，长着蓝色晶体眼睛" /><span className="pet-bubble">今天也请多多关照 ♡</span><div className="pet-name"><strong>憨憨<span>hanhan</span></strong><span>型号待确认 · 已接收设备</span></div><div className="pet-sticker" aria-hidden="true">100%<small>值得被爱</small></div></div>
+          <div className="pet-scene"><div className="pet-heading"><span>MEET YOUR LITTLE FRIEND</span><span className="pet-tag">正在被好好照顾 <Icon name="heart" /></span></div><span className="scene-spark spark-one" aria-hidden="true">✧</span><span className="scene-spark spark-two" aria-hidden="true">✳︎</span><div className="pet-halo" /><img className="hero-pet" src="./hanhan-ui.png" alt="毛茸茸的黄色憨憨，长着蓝色晶体眼睛" /><span className="pet-bubble">今天也请多多关照 ♡</span><div className="pet-name"><strong>憨憨<span>hanhan</span></strong><span>型号待确认 · 已接收设备</span></div><div className="pet-sticker" aria-hidden="true">100%<small>值得被爱</small></div></div>
         </section>
 
         <section className="inspection-section" id="inspection" aria-labelledby="inspection-title">
